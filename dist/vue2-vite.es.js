@@ -1,1 +1,1 @@
-const o={};export{o as ComponentA};
+var e=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",ComponentA:{}});const o=(o,n={})=>{for(let t in e){let i=n.prefix?n.prefix+t:t;o.component(i,e[t])}};"undefined"!=typeof window&&window.Vue&&o(window.Vue);export{o as install};

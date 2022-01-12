@@ -1,0 +1,48 @@
+/***************
+  COLORS
+****************/
+$colors: ('dark': #1D1E20,
+  'white': #FFFFFF,
+  'gray-border': #DADCE0,
+  'manatee': #8C93A9,
+  'spindle': #B6BDD3,
+  'periwinkle': #C5CDE9,
+  'ghost-white': #FAFBFF,
+  'white-blue': #F4F5FF,
+  'webhost-primary': #FF5C62,
+  'grey-dark': #36344D,
+  'primary-dark': #5025D1,
+  'meteorite-dark': #2F1C6A,
+  'danger-dark': #D63163,
+  'success-dark': #008361,
+  'warning-dark': #FEA419,
+  'gray': #727586,
+  'primary': #673DE6,
+  'meteorite': #8C85FF,
+  'danger': #FC5185,
+  'success': #00B090,
+  'warning': #FFCD35,
+  'grey-light': #F2F3F6,
+  'primary-light': #EBE4FF,
+  'meteorite-light': #D5DFFF,
+  'danger-light': #FFE8EF,
+  'success-light': #DEF4F0,
+  'warning-light': #FFF8E2);
+
+/***************
+  GRADIENTS
+****************/
+$gradients: ('dark-header': linear-gradient(180deg, #4816AF 0%, #6233DF 48.96%, #849BFF 95.83%, #849BFF 95.84%),
+  'dark-header-low-contrast': linear-gradient(43.48deg, #4312A5 -3.88%, #6233DF 32.32%, #849BFF 137.32%),
+  'light-header': linear-gradient(21.47deg, #D0D8F5 -14.07%, #F4F5FF 46.4%, #FFFFFF 156.29%));
+
+/*********************************************
+  Used for getting color
+**********************************************/
+@function get-color($key) {
+  @return map-get($colors, $key);
+}
+
+@function get-gradient($key) {
+  @return map-get($gradients, $key);
+}

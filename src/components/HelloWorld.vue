@@ -1,42 +1,29 @@
 <template>
-  <div>
-
-    <h1>{{ msg }}</h1>
-
-    <p>
-      <a
-        href="https://vitejs.dev/guide/features.html"
-        target="_blank"
-      >Vite Documentation</a> |
-      <a
-        href="https://vuejs.org/v2/guide/"
-        target="_blank"
-      >Vue 2 Documentation</a>
-    </p>
-
-    <button @click="count++">count is: {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test hot module replacement.
-    </p>
-  </div>
+  <div class="">just a test</div>
 </template>
 
-<script>
+<script lang="ts">
+import fill from "lodash/fill";
+
+const array = [1, 2, 3];
+
 export default {
-  props: {
-    msg: String,
-  },
-  data() {
+  data: function () {
     return {
-      count: 0,
+      loadTime: moment().format("MMMM Do YYYY, h:mm:ss a"),
+      filledArray: fill(array, "a"),
     };
   },
 };
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
+<style lang="scss" scoped>
+.component-a {
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 3px;
+  button {
+    font-weight: bold;
+  }
 }
 </style>

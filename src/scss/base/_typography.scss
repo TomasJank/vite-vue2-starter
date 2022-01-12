@@ -1,0 +1,94 @@
+html,
+body * {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: get-color('meteorite-dark');
+}
+
+.t-price-header,
+.t-price-pt,
+.t-header-currency,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.t-body-uppercase,
+.t-body-2 {
+  font-weight: 700;
+}
+
+.t-body-uppercase,
+.t-body-large,
+.t-body-strikethrough {
+  color: get-color('gray');
+}
+
+.t-price-header {
+  font-size: 80px;
+  line-height: 88px;
+}
+
+.t-price-pt {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.t-header-currency {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+
+  // @include breakpoint(tablet) {
+  //   font-size: 40px;
+  //   line-height: 48px;
+  // }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+
+  // @include breakpoint(tablet) {
+  //   font-size: 36px;
+  //   line-height: 40px;
+  // }
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+
+  // @include breakpoint(tablet) {
+  //   font-size: 24px;
+  //   line-height: 32px;
+  // }
+}
+
+.t-body-uppercase {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.t-body-large {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.t-body-2,
+.t-body-3,
+.t-body-strikethrough {
+  font-size: 14px;
+}
+
+.t-body-strikethrough {
+  text-decoration-line: line-through;
+}

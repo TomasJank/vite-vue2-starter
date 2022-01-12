@@ -3,18 +3,8 @@
 </template>
 
 <script lang="ts">
-import fill from "lodash/fill";
 
-const array = [1, 2, 3];
-
-export default {
-  data: function () {
-    return {
-      loadTime: moment().format("MMMM Do YYYY, h:mm:ss a"),
-      filledArray: fill(array, "a"),
-    };
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
